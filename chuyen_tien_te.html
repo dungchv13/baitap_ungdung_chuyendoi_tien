@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyen_doi_tien_te</title>
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <th>amount</th>
+            <th>from currency</th>
+            <th>to currency</th>
+        </tr>
+        <tr>
+            <td><input type="text" id="amount"> </td>
+            <td>
+                <select id="from">
+                    <option value="viet nam">viet nam</option>
+                </select>
+            </td>
+            <td>
+                <select id="to">
+                    <option value="usa">usa</option>
+                </select>
+            </td>
+        <td>
+            <button onclick="chuyen()" type="button">chuyen</button>
+        </td>
+        </tr>
+
+    </table>
+    <p id="123"></p>
+
+</form>
+<script >
+
+    function chuyen(){
+        let inputN=document.getElementById("amount").value;
+        let n = parseInt(inputN);
+        let i=n/23000;
+
+        document.getElementById("123").innerHTML= i;
+    }
+
+
+</script>
+</body>
+</html>
