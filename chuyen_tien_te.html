@@ -17,6 +17,7 @@
             <td>
                 <select id="from">
                     <option value="viet nam">viet nam</option>
+                    <option value="usa">usa</option>
                 </select>
             </td>
             <td>
@@ -30,7 +31,7 @@
         </tr>
 
     </table>
-    <p id="123"></p>
+    <p id="123" style="color: blue"></p>
 
 </form>
 <script >
@@ -40,7 +41,7 @@
         let n = parseInt(inputN);
         let i=n/23000;
 
-        document.getElementById("123").innerHTML= i;
+        document.getElementById("123").innerHTML= "result:"+i;
     }
 
 
